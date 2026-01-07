@@ -1,0 +1,9 @@
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = https://github.com/OneLastStop529/my-nvim-config.git
+[submodule "wezterm/.config/wezterm"]
+	path = wezterm/.config/wezterm
+	url = https://github.com/OneLastStop529/my-wezterm-config.git
+[submodule "tmux/.config/tmux"]
+	path = tmux/.config/tmux
+	url = https://github.com/OneLastStop529/my-tmux-config.git
