@@ -1,0 +1,2 @@
+firefox
+flatpak-kcm

@@ -1,0 +1,16 @@
+plasma-desktop
+plasma-workspace
+plasma-nm
+plasma-pa
+systemsettings
+
+konsole
+dolphin
+kate
+spectacle
+okular
+gwenview
+
+sddm
+sddm-kcm
+

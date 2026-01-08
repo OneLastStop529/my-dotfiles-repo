@@ -1,0 +1,5 @@
+nvidia-580xx-dkms
+nvidia-settings
+nvidia-prime
+mesa-utils
+

@@ -1,0 +1,10 @@
+base
+linux
+linux-firmware
+linux-headers
+networkmanager
+openssh
+sudo
+efibootmgr
+fakeroot
+
