@@ -7,3 +7,6 @@
 [submodule "tmux/.config/tmux"]
 	path = tmux/.config/tmux
 	url = https://github.com/OneLastStop529/my-tmux-config.git
+[submodule "starship/.config"]
+	path = starship/.config
+	url = git@github.com:OneLastStop529/my-starship-config.git
