@@ -110,9 +110,4 @@ pretty() {
 }
 
 
-### Flink HOME ###
-# Set FLINK_HOME if flink is installed
-export FLINK_HOME="$(brew --prefix apache-flink)/libexec"
 
-export FLINK1_HOME="$(brew --prefix apache-flink@1)/libexec"
-export PATH="/opt/homebrew/opt/apache-flink@1/bin:$PATH"
