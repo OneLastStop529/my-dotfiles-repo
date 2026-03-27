@@ -1,14 +1,31 @@
+tap "anomalyco/tap"
 tap "codecrafters-io/tap"
+# All-in-one AI-Powered CLI Chat & Copilot
+brew "aichat"
+# Scalable batch and stream data processing
+brew "apache-flink"
+# Scalable batch and stream data processing
+brew "apache-flink@1"
+# Engine for large-scale data processing
+brew "apache-spark"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+brew "aws-sam-cli"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
 # Get, unpack, build, and install modules from CPAN
 brew "cpanminus"
 # Top-like interface for container metrics
 brew "ctop"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
@@ -27,20 +44,30 @@ brew "gnu-sed"
 brew "go"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# Library for communicating with USB and Bluetooth HID devices
+brew "hidapi"
+# Improved top (interactive process viewer)
+brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Command-line benchmarking tool
 brew "hyperfine"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
+# Open-source distributed event streaming platform
+brew "kafka", restart_service: :changed
 # Lazier way to manage everything docker
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Library for USB device access
+brew "libusb"
+# Utility for directing compilation
+brew "make"
 # Java-based project management
 brew "maven"
 # CLI for Mermaid library
@@ -57,6 +84,8 @@ brew "python@3.11"
 brew "rbenv"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # Modernized, complete, self-contained TeX/LaTeX engine
 brew "tectonic"
 # Terminal multiplexer
@@ -65,19 +94,34 @@ brew "tmux"
 brew "tree-sitter"
 # Parser generator tool
 brew "tree-sitter-cli"
+# Internet file retriever
+brew "wget"
 # JavaScript package manager
 brew "yarn"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# The AI coding agent built for the terminal.
+brew "anomalyco/tap/opencode"
 # CodeCrafters CLI
 brew "codecrafters-io/tap/codecrafters"
+# Brings the power of Copilot coding agent directly to your terminal
+cask "copilot-cli"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
 cask "font-jetbrains-mono-nerd-font"
+# Toolbox companion for QMK Firmware
+cask "qmk-toolbox"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+
+# Note: VS Code extensions are intentionally not managed in this Brewfile.
+go "github.com/go-delve/delve/cmd/dlv"
+go "mvdan.cc/gofumpt"
+go "golang.org/x/tools/cmd/goimports"
 go "golang.org/x/tools/gopls"
 go "honnef.co/go/tools/cmd/staticcheck"
 cargo "rustlings"

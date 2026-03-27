@@ -31,7 +31,15 @@ git submodule sync --recursive
 log "Updating submodules (init + recursive)"
 git submodule update --init --recursive
 
-# 2) Stow configs into $HOME
+# 2) Generate zsh completions tracked by dotfiles
+if [ -x "$REPO_DIR/scripts/update-zsh-completions.sh" ]; then
+  log "Generating zsh completions"
+  "$REPO_DIR/scripts/update-zsh-completions.sh"
+else
+  warn "scripts/update-zsh-completions.sh not found or not executable; skipping completions update"
+fi
+
+# 3) Stow configs into $HOME
 # Assumes repo is structured like:
 #   tmux/.config/tmux -> stow tmux => ~/.config/tmux
 log "Stowing configs into \$HOME"
@@ -46,7 +54,7 @@ for pkg in "${STOW_PKGS[@]}"; do
   fi
 done
 
-# 3) Install TPM (your script)
+# 4) Install TPM (your script)
 if [ -x "$REPO_DIR/scripts/install-tpm.sh" ]; then
   log "Installing tmux plugin manager (TPM)"
   "$REPO_DIR/scripts/install-tpm.sh"
@@ -54,7 +62,7 @@ else
   warn "scripts/install-tpm.sh not found or not executable; skipping TPM install"
 fi
 
-# 4) Helpful post-steps
+# 5) Helpful post-steps
 log "Done."
 echo
 echo "Next steps:"

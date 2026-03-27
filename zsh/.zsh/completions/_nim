@@ -1,0 +1,52 @@
+#compdef nim
+
+_nim() {
+  local -a commands
+  commands=(
+    "compile:Compile project with default backend"
+    "c:Compile project with default backend"
+    "r:Compile and run"
+    "doc:Generate documentation"
+  )
+
+  _arguments -C \
+    '1:command:->cmds' \
+    '*::args:->rest' && return 0
+
+  case $state in
+    cmds)
+      _describe -t commands "nim command" commands
+      ;;
+    rest)
+      _arguments -s \
+        '--help[Show help]' \
+        '--fullhelp[Show all command line switches]' \
+        '--version[Show version information]' \
+        '--run[Run compiled program]' \
+        '--eval[Evaluate Nim code]:code:' \
+        '--backend[Select backend]:backend:(c cpp objc js)' \
+        '--path[Add search path]:path:_files -/' \
+        '--define[Define conditional symbol]:symbol:' \
+        '--undef[Undefine conditional symbol]:symbol:' \
+        '--forceBuild[Force rebuild]:bool:(on off)' \
+        '--stackTrace[Stack tracing]:bool:(on off)' \
+        '--lineTrace[Line tracing]:bool:(on off)' \
+        '--threads[Thread support]:bool:(on off)' \
+        '--checks[Runtime checks]:bool:(on off)' \
+        '--assertions[Assertions]:bool:(on off)' \
+        '--opt[Optimization level]:level:(none speed size)' \
+        '--debugger[Debugger]:debugger:(native)' \
+        '--app[App type]:type:(console gui lib staticlib)' \
+        '-p[Add search path]:path:_files -/' \
+        '-d[Define conditional symbol]:symbol:' \
+        '-u[Undefine conditional symbol]:symbol:' \
+        '-f[Force rebuild]:bool:(on off)' \
+        '-x[Runtime checks]:bool:(on off)' \
+        '-a[Assertions]:bool:(on off)' \
+        '-r[Run compiled program]' \
+        '*:file:_files'
+      ;;
+  esac
+}
+
+_nim "$@"
