@@ -1,0 +1,83 @@
+tap "codecrafters-io/tap"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Get, unpack, build, and install modules from CPAN
+brew "cpanminus"
+# Top-like interface for container metrics
+brew "ctop"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Interpreter for PostScript and PDF
+brew "ghostscript"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Command-line benchmarking tool
+brew "hyperfine"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Java-based project management
+brew "maven"
+# CLI for Mermaid library
+brew "mermaid-cli"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Modernized, complete, self-contained TeX/LaTeX engine
+brew "tectonic"
+# Terminal multiplexer
+brew "tmux"
+# Incremental parsing library
+brew "tree-sitter"
+# Parser generator tool
+brew "tree-sitter-cli"
+# JavaScript package manager
+brew "yarn"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
+brew "yq"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# CodeCrafters CLI
+brew "codecrafters-io/tap/codecrafters"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+cask "font-jetbrains-mono-nerd-font"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+go "golang.org/x/tools/gopls"
+go "honnef.co/go/tools/cmd/staticcheck"
+cargo "rustlings"
